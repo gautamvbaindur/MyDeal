@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<script id="recordTemplate" type="text/html">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="font-weight: bold;">${ID}</div>
+            <div class="panel-body">
+                <ul>{{each Names}}<li>${$value}</li>{{/each}}</ul>
+            </div>
+        </div>
+</script>
+
+
+
+<div class="row">
+    <h4>Challenge 2: Display the passenger list based on the record locator: The solution below uses jQuery with WebApi</h4>
+
+    <hr />
+    <div class="col-md-4">
+        <h5>Enter the passenger record here</h5>
+        <hr />
+        @Html.TextBox("recordText", "", new { @class = "form-control" })
+    </div>
+</div>
+<hr />
+<div class="btn-group">
+    <button onclick="displayPassengers()" type="button" class="btn btn-primary">Fetch Records</button>
+    <button onclick="addPassengers('@Url.Action("AddPassenger","Home")')" type="button" class="btn btn-primary">Enter Record</button>
+</div>
+<hr />
+<div class="row" id="results"></div>
+<hr />
+

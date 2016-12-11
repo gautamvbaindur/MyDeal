@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDeal.WebApi", "MyDeal.WebApi\MyDeal.WebApi.csproj", "{B2DD05DE-A544-4B28-B46B-8F2DB56ECA84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDeal.Web", "MyDeal.Web\MyDeal.Web.csproj", "{976A55FF-BE3E-4A33-A58A-8D098829D8FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2DD05DE-A544-4B28-B46B-8F2DB56ECA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DD05DE-A544-4B28-B46B-8F2DB56ECA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DD05DE-A544-4B28-B46B-8F2DB56ECA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DD05DE-A544-4B28-B46B-8F2DB56ECA84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976A55FF-BE3E-4A33-A58A-8D098829D8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976A55FF-BE3E-4A33-A58A-8D098829D8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976A55FF-BE3E-4A33-A58A-8D098829D8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976A55FF-BE3E-4A33-A58A-8D098829D8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

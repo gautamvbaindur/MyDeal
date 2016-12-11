@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <h4>Challenge 1: Shorten a long url</h4>
+    <ul> There are 2 buttons provided:
+        <li>First Button uses the bitly Nuget package to shorten the url</li>
+        <li>Second Button uses custom logic to shorten the url</li>
+    </ul>
+    <hr />
+    <div class="col-md-4">
+        <h5>enter the long url here</h5>
+        <hr />
+        @Html.TextBox("longUrlText", "", new { @class = "form-control" })
+    </div>
+</div>
+<hr />
+<div class="btn-group">
+    <button onclick="customShorten('http://localhost:54273/mydeal/shorten')" type="button" class="btn btn-primary">Shorten using bitly NuGet package</button>
+    <button onclick="customShorten('@Url.Action("GetShorterURL","Home")')" type="button" class="btn btn-primary">Shorten using custom logic</button>
+</div>
+<hr />
+<div class="col-md-4 well" id="output" >
+    <div class="panel panel-default">
+        <div class="panel-heading" style="font-weight: bold;">Your shorter URL:</div>
+        <div class="panel-body">
+            <span id="shorterURLResult" style="font-weight: bold; font-size: 16px;"></span>
+        </div>
+    </div>
+</div>
